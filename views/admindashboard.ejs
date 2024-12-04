@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="/style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1>Librarian Panel</h1>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <ul>
+                <a href="http://localhost:3000/Library/admin/Dashboard/Books"><li>AVAILABLE BOOKS</li></a>
+                <a href="http://localhost:3000/Library/Admin/Dashboard/Student-list"><li>REGISTERED STUDENT</li></a>
+                <a href="http://localhost:3000/Dashboard/Admin/issuedbook"><li>ISSUED BOOKS</li></a>
+                <a href="http://localhost:3000/Admin/Dashboard/returned-books"><li>RETURNED BOOKS</li></a>
+                <a href="http://localhost:3000/Dashboard/Admin/Add-admin"><li>ADD ADMIN</li></a>
+                <a href="http://localhost:3000/Admin/Dashboard/accept-reject"><li>BOOK REQUEST</li></a>
+                <a href="http://localhost:3000/Library/Dashboard/Logout"><li>LOGOUT</li></a>
+                
+            </ul>
+        </div>
+        <div class="data">
+            <h1>Dashboard Control Panel</h1>
+            <div class="boxes">
+                <div class="box1">
+                    <h1><%= countstudents %></h2>
+                    <p>Total students</p>
+                </div>
+                <div class="box2">
+                    <h1><%= countbook %></h2>
+                    <p>Available Books</p>
+                </div>
+                <div class="box3">
+                    <h1><%=countissue%></h2>
+                    <p>Issued Books</p>
+                </div>
+                <div class="box4">
+                    <h1><%=countreturn %></h2>
+                    <p>Returned Books</p>
+                </div>
+                <div class="box5">
+                    <h1><%=countaccept %></h2>
+                    <p>Accepted</p>
+                </div>
+                <div class="box6">
+                    <h1><%=countreject %></h2>
+                    <p>Rejected</p>
+                </div>
+                <div class="box7">
+                    <h1><%=countrequest %></h2>
+                    <p>Book Request</p>
+                </div>
+            </div>
+            <div class="Info">
+                <h1>Admin Info</h2>
+                <h2>Admin Name : <%=admininfo.adminname%> </h3>
+                <h2>Role : <%=admininfo.role%> </h3>
+                <h2>Email :<%=admininfo.email%> </h3>
+                <h2>Mobile Number : <%=admininfo.mobilenumber%></h3>
+                <h2>Password : <%=admininfo.password%></h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

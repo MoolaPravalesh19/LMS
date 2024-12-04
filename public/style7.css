@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+padding: 0;
+color: white;
+}
+body{
+width: 100%;
+height: 100vh;
+background:linear-gradient(
+    rgba(0, 0, 0, 0.649),
+    rgba(0, 0, 0, 0.646)
+  ), url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+  font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: normal;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+h1{
+text-align: center;
+font-weight: 800;
+font-size: 40px;
+padding: 10px;
+}

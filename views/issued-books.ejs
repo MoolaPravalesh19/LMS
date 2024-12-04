@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issued Books</title>
+    <link rel="stylesheet" href="/style6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Issued Book</h1>
+        <div class="libraryid">
+            <h2>Library ID : <%=student.libraryid%></h2>
+            <h2>Student Name : <%=student.studentname%></h2>
+            <h2>Branch : <%=student.branch%></h2>
+        </div>
+    <table>
+        <tr>
+            <th class="bookid">Book ID</th>
+            <th class="issuebook">Issued Book</th>
+            <th class="issuedate">Issue Date</th>
+            <th class="returndate">Return Date</th>
+            <th class="return">Return</th>
+        </tr>
+        <% for(user of user){ %>
+            <tr>
+                <td class="column1">
+                    <%= user.bookid %>
+                </td>
+                <td class="column2">
+                    <%= user.issuebook %>
+                </td>
+                <td class="column3">
+                    <%= user.issuedate %>
+                </td>
+                <td class="column4">
+                    <%= user.returndate %>
+                </td>
+                <td class="column6">
+                    <form method="get" action="/Dashboard/<%=user.bookid%>/issued-book">
+                        <button>Return</button>
+                    </form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin control book List</title>
+    <link rel="stylesheet" href="/style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Books Available</h1>
+    <table>
+        <tr>
+            <th class="bookid">Book ID</th>
+            <th class="bookname">Book Name</th>
+            <th class="publisher">Publisher Name</th>
+        </tr>
+        <% for(user of result){ %>
+            <tr>
+                <td class="column1">
+                    <%= user.bookid %>
+                </td>
+                <td class="column2">
+                    <%= user.bookname %>
+                </td>
+                <td class="column3">
+                    <%= user.authorname %>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+    <form method="get" action="/Admin/Dashboard/Add-book">
+        <button class="btn">Add A New Book</button>
+    </form>
+</body>
+</html>

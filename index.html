@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href=".\style.css">
+</head>
+<body>
+    <header>
+        <div class="part1">
+            <i class="fa-solid fa-envelope"> </i>
+            <span>Demo@gmail.com</span>
+            <i class="fa-solid fa-phone"> </i>
+            <span>+91-0000000000</span>
+        </div>
+        <div class="part2">
+            <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+            <p>New to here?<a href="http://localhost:3000/Library/registration"> Register Now</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="total">
+            <div class="text-part">
+                <h2>WELCOME TO LIBRARY</h2>
+                <P>Keys to the past… Gateway to the future.</P>
+            </div>
+            <div class="sub-total">
+                <div class="form1">
+                    <h2>STUDENT LOGIN</h2>
+                    <div class="form">
+                        <form method="post" action="/Library/Login">
+                            <h3>LIBRARY ID</h3>
+                            <input type="text" name="Libraryid" id="username" placeholder="Enter your Library ID">
+                            <h3>PASSWORD</h3>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <button class="btn">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="form2">
+                    <H2>ADMIN LOGIN</H2>
+                    <div class="form">
+                        <form method="post" action="/Library/Admin">
+                            <h3>ADMIN</h3>
+                            <input type="text" name="admin" id="username" placeholder="Enter Admin Name">
+                            <h3>PASSWORD</h3>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <button class="btn">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p class="copy">@ 2024 LMS Login </p>
+            <p>  Barun | Pravalesh | Priyanka | Prachi | Nikita</p>
+        </footer>
+    </main>
+    
+</body>
+
+</html>

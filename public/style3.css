@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.top{
+    width: 98%;
+    height: 10vh;
+    border-bottom: 2px solid white;
+    padding: 10px 15px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.top h2{
+    font-size: 40px;
+}
+.top h1{
+    font-size: 50px;
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.menu{
+    /* border: 2px solid red; */
+    width: 16%;
+    height: 80vh;
+    background-color:gray;
+    border-bottom-right-radius: 10px;
+    padding-top: 20px;
+}
+ul{
+    list-style: none;  
+}
+li{
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 100%;
+    padding: 5px 13px;
+    font-size: 20px;
+    
+}
+a{
+    text-decoration: none;
+}
+.section{
+    display: flex;
+    gap: 30px;
+    /* border: 10px solid black; */
+}
+.main{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-top: 10px; 
+}
+.student{
+    font-size: 35px;
+}
+.box1 , .box2 , .box3 , .box4 , .box6{
+    width: 200px;
+    height:75px;
+    border-radius: 10px; 
+    margin-top: 5px;
+    color: white;
+    padding: 10px;
+}
+.box1{
+    background-color: rgb(8, 192, 8);
+}
+.box2{
+    background-color: rgb(31, 207, 223);
+}
+.box3{
+    background-color: rgba(252, 39, 39, 0.91);
+}
+.box4{
+    background-color: rgba(240, 112, 21, 0.901);
+}
+.box6{
+    background-color: rgb(103, 156, 157);
+}
+.boxes{
+    display: flex;
+    gap: 10px;
+    width: 115%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.profile{
+    margin-top: 20px;
+    width: 110%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+    background-color: beige;
+    border: 2px solid black;
+}
+.profile h1{
+    margin-bottom: 20px;
+}
+.container h2{
+    padding: 10px;
+    font-size: 25px;
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+      font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 10px;
+}
+table{
+    margin-left: 75px;
+    margin-top: 30px;
+    border: 3px solid white;
+    width: 90%;
+    background-color: rgba(221, 71, 48, 0.745);
+    border-radius: 10px;
+}
+table , th , tr , td{
+    border: 2px solid rgb(248, 244, 244);
+    padding: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    color:rgb(251, 249, 249);
+}
+th{
+    font-size: 20px;
+}
+.btn{
+    padding: 15px 100px;
+    background-color:rgb(10, 9, 9) ;
+    color: rgb(246, 241, 241);
+    margin-top: 20px;
+    margin-left: 500px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 3px solid white;
+    cursor: pointer;
+}

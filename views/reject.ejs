@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <table>
+        <h1>Rejected Request List</h1>
+        <tr>
+            <th id="libraryid">Library ID</th>
+            <th class="studentname">Student Name</th>
+            <th class="branch">Branch</th>
+            <th class="bookid">Book ID</th>
+            <th class="issuebook">Issued Book</th>
+            <th class="issuedate">Issue Date</th>
+            <th class="returndate">Return Date</th>
+        </tr>
+        <% for(user of user){ %>
+            <tr>
+                <td class="column1">
+                    <%= user.libraryid %>
+                </td>
+                <td class="column1">
+                    <%= user.studentname %>
+                </td>
+                <td class="column1">
+                    <%= user.branch %>
+                </td>
+                <td class="column1">
+                    <%= user.bookid %>
+                </td>
+                <td class="column2">
+                    <%= user.issuebook %>
+                </td>
+                <td class="column3">
+                    <%= user.issuedate %>
+                </td>
+                <td class="column4">
+                    <%= user.returndate %>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>

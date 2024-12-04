@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="/style4.css">
+</head>
+<body>
+    <h1>Books Available</h1>
+    <table>
+        <tr>
+            <th class="bookid">Book ID</th>
+            <th class="bookname">Book Name</th>
+            <th class="publisher">Publisher Name</th>
+        </tr>
+        <% for(user of result){ %>
+            <tr>
+                <td class="column1">
+                    <%= user.bookid %>
+                </td>
+                <td class="column2">
+                    <%= user.bookname %>
+                </td>
+                <td class="column3">
+                    <%= user.authorname %>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
