@@ -1,0 +1,53 @@
+<% layout('layout/boilerplate2.ejs') -%>
+<div class="books">
+<h1>Books Requests</h1>
+    <table>
+        <tr>
+            <th class="libraryid">Library ID</th>
+            <th class="student">Student Name</th>
+            <th class="branch">Branch</th>
+            
+            <th class="bookname">Book Name</th>
+            <th class="bookid">Book ID</th>
+            <th class="issuedate">Issue Date</th>
+            <th class="returndate">Return Date</th>
+            <th class="Accept">Accept</th>
+            <th class="reject">Reject</th>
+        </tr>
+        <% for(Request of request){ %>
+            <tr>
+                <td class="column1">
+                 <%= Request.Libraryid  %> 
+                </td>
+                <td class="column2">
+                    <%= Request.Studentname  %>  
+                </td>
+                <td class="column3">
+                    <%= Request.Branch  %> 
+                </td>
+                <td class="column3">
+                    <%= Request.Bookname  %> 
+                </td>
+                <td class="column3">
+                    <%= Request.Bookid  %> 
+                </td>
+                <td class="column3">
+                    <%= Request.Issuedate  %> 
+                </td>
+                <td class="column3">
+                    <%= Request.returndate  %> 
+                </td>
+                <td class="column3">
+                    <form method="post" action="/Admin/<%=Request._id%>/Accept"><button class="btn btn-dark">Accept</button></form>
+                    
+                </td>
+                <td class="column3">
+                    <form method="post" action="/Admin/<%=Request._id%>/Reject"><button class="btn btn-dark">Reject</button></form>
+                    
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

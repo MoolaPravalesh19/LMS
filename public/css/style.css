@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    /* padding: 5px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+    /* height: 88vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.Personals{
+    background-color: rgb(241, 241, 57);
+    /* width: 97.2%; */
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+
+}
+.Heading{
+    background-color: rgb(236, 227, 227);
+    padding-top: 3px;
+    padding-left: 100px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Heading p{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Heading a{
+    text-decoration: none;
+}
+.content{
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+    /* height: 88vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    min-height: 78vh;
+    
+}
+.Cotation{
+    padding-left: 20px;
+    color: white;
+    margin-top: 220px;
+}
+.Form{
+    display: flex;
+    width: 65%;
+}
+.Student-Login , .Admin-Login{
+    border: 3px solid white;
+    width: 320px;
+    padding: 10px;
+    margin-top: 90px;
+    border-radius: 10px;
+    height: 55vh;
+    background-color: rgba(255, 255, 0, 0.309); 
+    backdrop-filter: blur(2px);
+}
+.Student-Login h2 , .Admin-Login h2{
+    color: white;
+    text-align: center;
+}
+.form-label{
+    color: white;
+}
+.invalid-feedback{
+    font-weight: 600;
+    color: yellow;
+    font-size: 15px;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgba(16, 16, 16, 0.555);
+    padding: 4px 0;
+    backdrop-filter: blur(2px);
+} 
+
+#container{
+    /* background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 90.6vh;
+    
+}
+.container{
+    min-height:78vh ;
+}
+.Register{
+    background-color: rgba(72, 162, 235, 0.44);
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 13px;
+    /* margin-top: 100px;
+    margin-bottom: 90px; */
+    margin-left: 430px;
+    position: absolute;
+    top: 60px;
+}
+.Heading h1{
+    color: black;
+}
+
+/* body{
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://editor.analyticsvidhya.com/uploads/82860library-management-system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+#form{
+    border: 3px solid white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.date{
+    display: flex;
+}
+.ID{
+    display: flex;
+}

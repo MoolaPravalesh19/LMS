@@ -1,0 +1,75 @@
+<% layout('layout/boilerplate1.ejs') -%>
+<div class="student">
+    <div class="top">
+        <img src="https://thumbs.dreamstime.com/z/books-logo-illustrated-isolated-design-53710670.jpg" alt="">
+        <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+        <h2>Dashboard</h2>
+
+    </div>
+    <div class="section">
+        <div class="menu">
+            <ul>
+                <a href="/Student/books">
+                    <li>Book List</li>
+                </a>
+                <a href="/Student/<%= studentarray.id %>/issued-books">
+                    <li>Issued book</li>
+                </a>
+                <a href="/Student/<%= studentarray.id %>/Returned-books">
+                    <li>Returned book</li>
+                </a>
+                <a href="/Student/<%= studentarray.id %>/issue-book">
+                    <li>Issue book</li>
+                </a>
+                <a href="/Student/<%= studentarray.id %>/Accepted-requests">
+                    <li>Accepted Requests</li>
+                </a>
+                <a href="/Student/<%= studentarray.id %>/Rejected-requests">
+                    <li>Rejected Requests</li>
+                </a>
+                <a href="/Student/Logout">
+                    <li>Logout</li>
+                </a>
+
+            </ul>
+        </div>
+        <div class="main">
+            <h2  style="color: white;font-size: 35px;">Student Satistics</h2>
+            <div class="boxes">
+                <div class="box1">
+                    <h1><%= Issues %></h2>
+                    <h2>Issued Books</h3>
+                </div>
+                <div class="box2">
+                    <h1><%= bookCount  %></h1>
+                    <h2>Available Books</h2>
+                </div>
+                <div class="box3">
+                    <h1><%= Returns %></h1>
+                    <h2>Returned Books</h2>
+                </div>
+                <div class="box4">
+                    <h1><%= Accepts %></h1>
+                    <h2>Accept</h2>
+                </div>
+                <div class="box6">
+                    <h1><%= Rejects %></h1>
+                    <h2>Reject</h2>
+                </div>
+            </div>
+            <div class="profile">
+                <h1 style="color: black;">Student Info</h2>
+                    <div class="container">
+                        <h2>Library ID : <%= studentarray.id %> </h2>
+                        <h2>Student Name: <%= studentarray.username  %> </h2>
+                        <h2>Branch : <%= studentarray.branch %> </h2>
+                        <H2>Email : <%= studentarray.email %></H2>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body>
+
+    </html>

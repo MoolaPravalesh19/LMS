@@ -1,0 +1,67 @@
+<% layout('layout/boilerplate.ejs') -%>
+<body>
+    <header>
+        <div class="Personals">
+            <i class="fa-solid fa-envelope"> </i>
+            <span>Demo@gmail.com</span>
+            <i class="fa-solid fa-phone"> </i>
+            <span>+91-0000000000</span>
+        </div>
+        <div class="Heading">
+            <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+            <p>New to here?<a href="/Library/registration"> Register Now</a></p>
+        </div>
+    </header>
+    
+    <main>
+        <%- include("../includes/flash.ejs")  %>
+        <div class="content">
+            <div class="Cotation">
+                <h2>WELCOME TO LIBRARY</h2>
+                <P>Keys to the past… Gateway to the future.</P>
+            </div>
+            <div class="Form">
+                <div class="Student-Login col-8 offset-3">
+                    <h2>STUDENT LOGIN</h2>
+                    <div class="form">
+                        <form method="post" action="/library/student" novalidate class="needs-validation">
+                            <label for="username" class="form-label">User ID</label>
+                            <input type="text" name="username" id="username" placeholder="Enter your Library ID" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a Valid User ID
+                              </div>
+                            <br>
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a Valid Password
+                              </div>
+                            <button class="btn btn-dark mt-3">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="Admin-Login col-8 offset-1">
+                    <H2>ADMIN LOGIN</H2>
+                    <div class="form">
+                        <form method="post" action="/library/admin" novalidate class="needs-validation">
+                            <label for="username" class="form-label">Admin</label>
+                            <input type="text" name="username" id="username" placeholder="Enter Admin Name" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a Valid Admin
+                              </div>
+                            <br>
+                            <label for="Password" class="form-label">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a Valid Password
+                              </div>
+                            <button class="btn btn-dark mt-3">LOGIN</button>
+                        </form>
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+        
+    </main>   
+</body>

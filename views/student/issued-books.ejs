@@ -1,0 +1,50 @@
+<% layout('layout/boilerplate2.ejs') -%>
+<div class="books">
+<h1>Issued Books</h1>
+    <table>
+        <tr>
+            <th class="bookid">Issue ID</th>
+            <th class="bookname">Library ID</th>
+            <th class="Author">Student Name</th>
+            <th class="isbn">Branch</th>
+            <th class="edition">Book Name</th>
+            <th class="delete">Book ID</th>
+            <th class="delete">Issue Date</th>
+            <th class="delete">Return Date</th>
+            <th class="return">Return</th>
+        </tr>
+        <% for(Issue of issuebooks){ %>
+            <tr>
+                <td class="column1">
+                 <%= Issue.id  %> 
+                </td>
+                <td class="column2">
+                    <%= Issue.Libraryid  %>  
+                </td>
+                <td class="column3">
+                    <%= Issue.Studentname  %> 
+                </td>
+                <td class="column3">
+                    <%= Issue.Branch  %> 
+                </td>
+                <td class="column3">
+                    <%= Issue.Bookname  %> 
+                </td>
+                <td class="column3">
+                    <%= Issue.Bookid  %> 
+                </td>
+                <td class="column3">
+                    <%= Issue.Issuedate %> 
+                </td>
+                <td class="column3">
+                    <%= Issue.Returndate  %> 
+                </td>
+                <td>
+                    <form method="post" action="/Student/<%=Issue.id%>/<%= Issue.Libraryid %>/return"><button class="btn btn-dark">Return</button></form>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

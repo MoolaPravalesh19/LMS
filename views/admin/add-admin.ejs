@@ -1,0 +1,46 @@
+<% layout('layout/boilerplate.ejs') -%>
+<h1>ADD NEW ADMIN</h1>
+<%- include("../includes/flash.ejs")  %>
+<div class="container">
+    <div id="form" class="col-6 offset-3 mt-5 mb-5">
+      <form method="post" action="/Admin/new-admin" novalidate class="needs-validation">
+        <div class="bookname">
+          <label class="form-label">Admin Name :</label>
+          <input type="text" name="admin" id="bookname" placeholder="Enter Admin" class="form-control" required>
+          <div class="invalid-feedback">
+            Please provide a Valid Admin Name
+          </div>
+        </div>
+        <br>
+        <div class="Author">
+            <label class="form-label">Email :</label>
+            <input type="text" name="Email" id="bookname" placeholder="Enter Email Address" class="form-control" required>
+            <div class="invalid-feedback">
+              Please provide a Valid Email
+            </div>
+          </div>
+          <br>
+          <div class="ISBN">
+            <label class="form-label">Phone Number :</label>
+            <input type="text" name="Phonenumber" id="bookname" placeholder="Enter Phone Number" class="form-control" required>
+            <div class="invalid-feedback">
+              Please provide a Valid Phone Number
+            </div>
+          </div>
+          <br>
+          <div class="ISBN">
+            <label class="form-label">Password</label>
+            <input type="text" name="Password" id="bookname" placeholder="Enter the Password" class="form-control" required>
+            <div class="invalid-feedback">
+              Please provide a Unique Password
+            </div>
+          </div>
+        <br>
+        <div class="button">
+          <button class="btn btn-dark">Add Admin</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

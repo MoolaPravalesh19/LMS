@@ -1,0 +1,39 @@
+<% layout('layout/boilerplate2.ejs') -%>
+<div class="books">
+<h1>Books Available</h1>
+    <table>
+        <tr>
+            <th class="bookid">Book ID</th>
+            <th class="bookname">Book Name</th>
+            <th class="Author">Author</th>
+            <th class="isbn">ISBN</th>
+            <th class="edition">Edition</th>
+            <th class="delete">Delete</th>
+        </tr>
+        <% for(Book of Books){ %>
+            <tr>
+                <td class="column1">
+                 <%= Book.id  %> 
+                </td>
+                <td class="column2">
+                    <%= Book.Title  %>  
+                </td>
+                <td class="column3">
+                    <%= Book.Author  %> 
+                </td>
+                <td class="column3">
+                    <%= Book.ISBN  %> 
+                </td>
+                <td class="column3">
+                    <%= Book.Edition  %> 
+                </td>
+                <td>
+                    <form method="post" action="/Admin/<%=Book._id%>/delete"><button class="btn btn-dark">Delete</button></form>
+                </td>
+                
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

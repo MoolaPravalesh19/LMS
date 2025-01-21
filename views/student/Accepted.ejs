@@ -1,0 +1,46 @@
+<% layout('layout/boilerplate2.ejs') -%>
+<div class="books">
+<h1>Accepted Books</h1>
+    <table>
+        <tr>
+            <th class="bookid">Accepted ID</th>
+            <th class="bookname">Library ID</th>
+            <th class="Author">Student Name</th>
+            <th class="isbn">Branch</th>
+            <th class="edition">Book Name</th>
+            <th class="delete">Book ID</th>
+            <th class="delete">Issue Date</th>
+            <th class="delete">Return Date</th>
+        </tr>
+        <% for(Accepted of accepted){ %>
+            <tr>
+                <td class="column1">
+                 <%= Accepted.id  %> 
+                </td>
+                <td class="column2">
+                    <%= Accepted.Libraryid  %>  
+                </td>
+                <td class="column3">
+                    <%= Accepted.Studentname  %> 
+                </td>
+                <td class="column3">
+                    <%= Accepted.Branch  %> 
+                </td>
+                <td class="column3">
+                    <%= Accepted.Bookname  %> 
+                </td>
+                <td class="column3">
+                    <%= Accepted.Bookid  %> 
+                </td>
+                <td class="column3">
+                    <%= Accepted.issuedate %> 
+                </td>
+                <td class="column3">
+                    <%= Accepted.Returndate  %> 
+                </td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<% layout('layout/boilerplate1.ejs') -%>
+<div class="student">
+    <div class="top">
+        <img src="https://thumbs.dreamstime.com/z/books-logo-illustrated-isolated-design-53710670.jpg" alt="">
+        <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+        <h2>Dashboard</h2>
+
+    </div>
+    <div class="section">
+        <div class="menu">
+            <ul>
+                <a href="/Admin/Dashboard/Books">
+                    <li>Book List</li>
+                </a>
+                <a href="/Admin/students">
+                    <li>Students</li>
+                </a>
+                <a href="/Admin/issued-books">
+                    <li>Issued book</li>
+                </a>
+                <a href="/Admin/Returned-books">
+                    <li>Returned book</li>
+                </a>
+                <a href="/Admin/Book-requests">
+                    <li>Book Requests</li>
+                </a>
+                <a href="/Admin/Add-book">
+                    <li>Add New Book</li>
+                </a>
+                <a href="/Admin/Add-Admin">
+                    <li>Add New Admin</li>
+                </a>
+                <a href="/Admin/Logout">
+                    <li>Logout</li>
+                </a>
+
+            </ul>
+        </div>
+        <div class="main">
+            <h2  style="color: white;font-size: 35px;">Admin Satistics</h2>
+            <div class="boxes">
+                <div class="box1">
+                    <h1><%= students  %></h2>
+                    <h2>Students</h3>
+                </div>
+                <div class="box2">
+                    <h1><%= bookCount %></h1>
+                    <h2>Available Books</h2>
+                </div>
+                <div class="box3">
+                    <h1><%= Returns %></h1>
+                    <h2>Returned Books</h2>
+                </div>
+                <div class="box4">
+                    <h1><%= Requests %></h1>
+                    <h2>Requests</h2>
+                </div>
+                <div class="box6">
+                    <h1><%= Issues %></h1>
+                    <h2>Issued Books</h2>
+                </div>
+            </div>
+            <div class="profile">
+                <h1 style="color: black;">Admin Info</h2>
+                    <div class="container">
+                        <h2>Admin ID : <%= adminarray.id  %> </h2>
+                        <h2>Admin Name : <%= adminarray.username %> </h2>
+                        <H2>Email : <%= adminarray.Email %> </H2>
+                        <h2>Phone Number : <%= adminarray.Phonenumber %></h2>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body>
+
+    </html>
