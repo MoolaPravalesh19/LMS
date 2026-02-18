@@ -1,6 +1,6 @@
 {
   "engines":{
-    "node": "24.x"
+    "node": "24.13.0"
   },
   "name": "lms",
   "version": "1.0.0",
